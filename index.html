@@ -1,0 +1,254 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<title>KW ART</title>
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+	<style>
+	body{background-color:rgb(215, 228, 250);}
+	#container
+	{
+		
+		font-family: 'PT Sans Narrow', sans-serif;
+		width: 95%;
+		margin-left: auto;
+		margin-right: auto;
+		background-color:rgb(255, 255, 255);
+		border-radius: 40px;
+	}
+	#logo
+	{
+		background-color: #1d1f24;
+		color: white;
+		text-align: center;
+		padding: 15px;
+		border-top-left-radius: 25px;
+		border-top-right-radius: 25px;
+		
+		
+	}
+	
+	
+	#content
+	{
+		float: left;
+		padding: 20px;
+		width: 78%;
+		
+		
+	}
+	#ad
+	{
+		float: right;
+		width: 7%;
+		min-height: 620px;
+		padding: 10px;
+		background-color: #a8a8a8;
+		background-image: url("img/empire5.jpg")
+		
+	}
+	#footer
+	{
+		clear: both;
+		background-color: #1d1f24;
+		color: white;
+		text-align: center;
+		padding: 20px;
+		border-bottom-left-radius: 25px;
+		border-bottom-right-radius: 25px;
+	}	
+	#zegar
+	{
+	   font-family:'Orbitron', sans-serif;";
+       src: url('Technology-Bold.ttf');
+	   color: #1d1f24;
+	   padding: 10px;
+	   text-align:center;
+	   font-size: 1vw;
+	}
+	h3 
+	{
+        font-family: 'Brush Script MT', cursive;
+        color: #1d1f24;
+	    text-align: center;
+        top: 2cm;
+        font-size: 0.7vw;
+
+    }
+	
+img.rounded-corners {
+  border-radius: 10px;
+  position: relative;
+  top: 0.85vw;
+  
+}
+img.lewe1{
+    position: relative;
+    left: 20vw;
+	float: left;
+	
+}
+img.lewe2{
+    position: relative;
+    left: -19vw;
+	float: left;
+	margin-top:22vw;
+	
+}
+img.lewe3{
+    position: relative;
+    left: -22vw;
+	float: left;
+	margin-top:22vw;
+	
+}
+img.prawe1{
+    position: relative;
+    left: 5vw;
+	float: right;
+	margin-top:1vw;
+}
+img.prawe2{
+    position: relative;
+    left: 49vw;
+	float: right;
+	margin-top:1vw;
+}
+img.prawe3{
+    position: relative;
+    left: 31vw;
+	float: right;
+	margin-top:1vw;
+}
+p{
+position:relative;
+right: -22vw;
+margin-top:17vw;
+font-size: 0.7vw;
+}
+p.prawep1{
+position:relative;
+right: -22vw;
+margin-top:17vw;
+font-size: 0.7vw;
+float: left;
+}
+p.prawep2{
+position:relative;
+right: 17vw;
+margin-top:20vw;
+font-size: 0.7vw;
+float: left;
+}
+p.prawep3{
+position:relative;
+right: -21vw;
+margin-top:18vw;
+font-size: 0.7vw;
+float: left;
+}
+p.prawep4{
+position:relative;
+right: -5vw;
+margin-top:-1vw;
+font-size: 0.7vw;
+float: right;
+}
+p.prawep5{
+position:relative;
+right: 10vw;
+margin-top:-1vw;
+font-size: 0.7vw;
+float: right;
+}
+p.prawep6{
+position:relative;
+left: -13vw;
+margin-top:-1vw;
+font-size: 0.7vw;
+float: right;
+}
+.prawe3 img:hover{
+filter:grayscale(0);
+transform:scale(1.1);
+}
+
+	</style>
+	<script>
+function startTime() {
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('zegar').innerHTML =  h + ":" + m + ":" + s;
+  setTimeout(startTime, 1000);
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
+
+</head>
+
+<body onload='startTime()'>
+<link rel="shortcut icon" href="img/logotyp.png" type="image/x-icon">
+<link rel="icon" href="img/logotyp.png">
+	<div id="container">
+	
+		<div id="logo">
+			<h1>
+			
+			<img src="img/logotyp.png"  width="3%" class="wdn-stretch rounded-corners">
+			
+			
+			KW Art Gallery
+			<img src="img/logotyp.png"  width="3%" class="wdn-stretch rounded-corners">
+			</h1>
+		</div>
+		
+	
+		
+		
+		<div id="content">
+			<a href="img/1.png" target="_blank"><img src="img/1.png" width="20%" class="lewe1"></a>
+			
+			<p> Postać z mitologii Tolkiena czyli Gandalf Portret wykonany ołówkiem na formacie 26x19cm</p>
+			<p class="prawep1"> Theoden, król Rohanu jest jedną z ulubionych postaci ze Śródziemia artysty. Portret wykonany ołówkiem na formacie 26x19cm</p>
+			<a href="img/2.png" target="_blank"><img src="img/2.png" width="20%" class="prawe1"></a>
+			<a href="img/3.png" target="_blank"><img src="img/3.png" width="20%" class="lewe2"></a>
+			<p class="prawep2"> Portret wykonany ołówkiem na formacie A4 </p>
+			<a href="img/4.png" target="_blank"><img src="img/4.png" width="20%" class="prawe1"></a>
+			<p class="prawep3"> Portret przedstawiający Fryderyka Nietzschego. Persona na pewno zasługująca na coś więcej niż szybki portret na formacie 14x9 cm</p>
+		    <a href="img/5.png" target="_blank"><img src="img/5.png" width="20%" class="lewe3"></a>
+			<p class="prawep4"> Portret przedstawiający Jordana B. Petersona. Peterson wykonany ołówkiem w szkicowniku. Format na jakim został wykonany to 26x19cm.</p>
+		    <a href="img/6.png" target="_blank"><img src="img/6.png" width="20%" class="prawe2"></a>
+			<p class="prawep5">George Orwell wybitny pisarz i publicysta. Chyba każdy z nas słyszał jego najsłynniejszych dziełach czyli o "Folwarku zwierzęcym" i "roku1984".</br> Portret wykonany ołówkiem na formacie 26x19cm</p>
+		    <a href="img/7.png" target="_blank"><img src="img/7.png" width="20%" class="prawe1"></a>
+			<p class="prawep6">Wykonany ołówkiem na formacie 26x19cm portret przedstawiający Mistrza Tolkiena.</p>
+			<a href="img/8.png" target="_blank"><img src="img/8.png" width="20%" class="prawe3"></a>
+			<p class="prawep6"> Szachowy rysunek przedstawiający Arcymistrza, Magnusa Carlsena czyli najlepszego szachistę na świecie.</br> Rysunek wykonany ołówkiem na małym w przeciwieństwie do wielkości osoby przedstawionej, na nim formacie, bo to zaledwie 10x14 cm</p>
+		</div>
+		
+		
+		<div id="ad">
+		<h3><strong>GODZINA:</strong></h3>
+		    <div id="zegar";style="font-family: 'Orbitron', sans-serif;"></div>
+			
+			
+		</div>
+		
+		<div id="footer">
+			Strona Wykonana przez Kajetana Kowalskiego ©
+		</div>
+	
+	</div>
+
+    
+</body>
+</html>
